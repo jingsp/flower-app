@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # some_flower
 
 > A Vue.js project
@@ -26,7 +26,6 @@ npm test
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
+
 # flower-app
 this is a app
->>>>>>> b415c44d2f5e70eb787c42f5eb0a1d77eeecb93a
