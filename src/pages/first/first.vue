@@ -31,6 +31,7 @@
     import c from '../../assets/images/banner3.jpg'
     import d from '../../assets/images/banner4.png'
     import e from '../../assets/images/banner5.jpg'
+    import {getGoodsList} from '../../service/getData'
 	export default {
 		data () {
 			return {
@@ -52,6 +53,11 @@
 			GoodsItem
 		},
 		methods: {
+		},
+		created () {
+			getGoodsList().then((res) => {
+				console.log(res);
+			})
 		}
 	}
 </script>

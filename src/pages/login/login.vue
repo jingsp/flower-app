@@ -4,12 +4,12 @@
   	<div class="from-container">
   		<form action="" class="login-form">
   		<div class="username">
-  			<i class="user-icon"></i>
+  			<i class="iconfont user-icon">&#xe673;</i>
   			<input type="text" v-model="username" placeholder="手机号/用户名"/>
   		</div>
   		<div class="password">
-  			<i class="psw-icon"></i>
-  			<input type="text" v-model="password" placeholder="请输入密码"/>
+  			<i class="iconfont psw-icon">&#xe6ca;</i>
+  			<input type="password" v-model="password" placeholder="请输入密码"/>
   		</div>
   		<div class="other-link">
   			<a href="#">忘记密码</a>
@@ -34,6 +34,7 @@ export default {
   },
   methods: {
   	login () {
+  		this.$router.push('/first');
   	}
   }
 }
@@ -55,28 +56,15 @@ export default {
   			position: relative;
   			margin-bottom: 20px;
   			.user-icon {
-  			  width: 19px;
-  			  height: 19px;
-  			  position: absolute;
-  			  /*left: -6px;*/
-  			  top: 3px;
-  			  /*border: 1px solid #eee;*/
-  			  background: url(../../assets/images/icon.png) -0px -46px no-repeat;
-  			  background-size: 100%;
-  			
+  			   position: absolute;
+  			   top: 2px;
   		  }
   		}
   		.password {
   			position: relative;
   			.psw-icon {
-  				width: 19px;
-  			  height: 19px;
-  			  position: absolute;
-  			  /*left: -6px;*/
-  			  top: 3px;
-  			  /*border: 1px solid #eee;*/
-  			  background: url(../../assets/images/icon.png) -0px -46px no-repeat;
-  			  background-size: 100%;
+  	       position: absolute;
+  	       top: 2px;
   			}
   		}
   		.other-link {

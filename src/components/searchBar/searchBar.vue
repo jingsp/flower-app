@@ -7,7 +7,9 @@
 
 <script>
 	export default {
-		data () {},
+		data () {
+			return {}
+		},
 		methods: {
 			search () {
 				console.log(1111)

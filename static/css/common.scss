@@ -114,13 +114,24 @@ ul, li {
     float: right;
 }
 
+//按钮样式
+.btn {
+    height: 30px;
+    line-height: 30px;
+    border: 0 none;
+    background: #72CCA8;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
 @font-face {
   font-family: 'iconfont';  /* project id 352838 */
-  src: url('//at.alicdn.com/t/font_1h99o53jdvswz5mi.eot');
-  src: url('//at.alicdn.com/t/font_1h99o53jdvswz5mi.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1h99o53jdvswz5mi.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1h99o53jdvswz5mi.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1h99o53jdvswz5mi.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_2fg0a6khf9wwmi.eot');
+  src: url('//at.alicdn.com/t/font_2fg0a6khf9wwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2fg0a6khf9wwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2fg0a6khf9wwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2fg0a6khf9wwmi.svg#iconfont') format('svg');
 }
 
 .iconfont {

@@ -25,5 +25,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
+	.home-container {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
 </style>
