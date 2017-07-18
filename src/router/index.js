@@ -5,6 +5,8 @@ import Home from '../pages/home/home'
 import User from '../pages/user/user'
 import First from '../pages/first/first'
 import Detail from '../pages/detail/detail'
+import Order from '../pages/order/order'
+import PayDone from '../pages/payDone/payDone'
 
 Vue.use(Router)
 
@@ -29,12 +31,20 @@ export default new Router({
     	  path: '/detail',
         name: 'Detail',
         component: Detail
+      }, {
+      	path: '/order',
+        name: 'Order',
+        component: Order
       }]
     }, {
       path: '/login',
       name: 'Login',
       component: Login
-    }
+    }, {
+      path: '/payDone',
+      name: 'PayDone',
+      component: PayDone
+    }    
   ]
 })
 
