@@ -7,7 +7,8 @@ var getGoodsList = () => {}
 
 if (process.env.NODE_ENV === 'development') {
     login = (userInfo) => {
-	   return axios.post('/logon', userInfo);
+//  	console.log(userInfo);
+	   return axios.post('/login', userInfo);
     }
 
     getGoodsList = () => {
@@ -15,7 +16,7 @@ if (process.env.NODE_ENV === 'development') {
     }
 } else {
 	login = (userInfo) => {
-	   return axios.post('/logon', userInfo);
+	   return axios.post('/login', userInfo);
     }
 
     getGoodsList = () => {
