@@ -1,17 +1,17 @@
 <template>
 	<ul class="bar-container">
 		<li class="bar-item">		
-			<router-link to="home">
+			<router-link to="first">
 				<i class="iconfont">&#xe614;</i>
 				<p>首页</p>
 		    </router-link>
 	    </li>
-	    <li class="bar-item">		
+	    <!--<li class="bar-item">		
 			<router-link to="category">
 				<i class="iconfont">&#xe7cc;</i>
 				<p>分类</p>
 			</router-link>
-	    </li>
+	    </li>-->
 	    <li class="bar-item">		
 			<router-link to="cart">
 				<i class="iconfont">&#xe603;</i>
@@ -19,7 +19,7 @@
 		    </router-link>
 	    </li>
 	    <li class="bar-item">		
-			<router-link to="usercenter">
+			<router-link to="user">
 				<i class="iconfont">&#xe637;</i>
 				<p>我的</p>
 			</router-link>

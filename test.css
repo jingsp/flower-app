@@ -127,26 +127,6 @@ ul, li {
     float: right;
 }
 
-//按钮样式
-.btn {
-    height: 30px;
-    line-height: 30px;
-    border: 0 none;
-    background: #72CCA8;
-    border-radius: 5px;
-    color: #fff;
-}
-
-.f-size-12 {
-    font-size: 12px;
-}
-
-.f-size-8 {
-    font-size: 8px;
-}
-.money-col {
-  color: #E6A9BE;    
-}
 
 @font-face {
   font-family: 'iconfont';  /* project id 352838 */

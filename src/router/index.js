@@ -6,6 +6,7 @@ import User from '../pages/user/user'
 import First from '../pages/first/first'
 import Detail from '../pages/detail/detail'
 import Order from '../pages/order/order'
+import Cart from '../pages/cart/cart'
 import PayDone from '../pages/payDone/payDone'
 
 Vue.use(Router)
@@ -40,6 +41,10 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    }, {
+      path: '/cart',
+      name: 'Cart',
+      component: Cart
     }, {
       path: '/payDone',
       name: 'PayDone',

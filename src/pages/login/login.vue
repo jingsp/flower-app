@@ -28,14 +28,12 @@
   	  		<i class="iconfont">&#xe64c;</i>
   	  	</div>
   	  </div>
-   	</div>
-  	
-
+   </div>
   </div>
 </template>
 
 <script>
-	import {login} from '../../service/getData.js'
+//	import {login} from '../../service/getData.js'
 export default {
   data () {
   	return {
@@ -47,10 +45,10 @@ export default {
   },
   methods: {
   	log () { 		
-  		login(this.userInfo).then((res) => {
-  			console.log(res)
-//			this.$router.push('/first');
-  		});	
+//		login(this.userInfo).then((res) => {
+//			console.log(res)
+//		});	
+      this.$router.push('/first');
   	}
   }
  }
