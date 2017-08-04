@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "美丽的花儿呀",
+    "src": "../static/img/banner1.jpg",
+    "price": 9.00
+   }, {
+    "id": 2,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "美丽的花儿呀",
+    "src": "../static/img/banner2.jpg",
+    "price": 9.00
+   }, {
+    "id": 3,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "美丽的花儿呀",
+    "src": "../static/img/banner3.jpg",
+    "price": 9.00
+   }, {
+    "id": 4,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "美丽的花儿呀",
+    "src": "../static/img/banner4.png",
+    "price": 9.00
+   }, {
+    "id": 5,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "美丽的花儿呀",
+    "src": "../static/img/banner5.jpg",
+    "price": 9.00
+   }
+]
+   

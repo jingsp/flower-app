@@ -64,7 +64,7 @@ export default {
   	  -webkit-filter: blur(3px);
   	  filter: blur(2px);
   	  height: 100%;
-  	  background-size: 100%;
+  	  background-size: contain;
   	}
   	.content {
   		width: 12.7rem;

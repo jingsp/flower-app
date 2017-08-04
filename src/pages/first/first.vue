@@ -1,6 +1,6 @@
 <template>
 	<section class="first-container">
-	  <banner :imgList="imgList"></banner>
+	  <banner :imgList="bannerList"></banner>
 	  <section class="activity">
 	  	<router-link to="detail">
 			<i class="iconfont new">&#xe631;</i>
@@ -16,36 +16,17 @@
 		</router-link>
 	  </section>
 	  <goods-item></goods-item>
-	  <goods-item></goods-item>
-	  <goods-item></goods-item>
-	  <goods-item></goods-item>
-	  <goods-item></goods-item>
 	</section>
 </template>
 
 <script>
 	import Banner from '../../components/banner/banner'
 	import GoodsItem from '../../components/goodsItem/goodsItem'
-	import a from '../../assets/images/banner1.jpg'
-    import b from '../../assets/images/banner2.jpg'
-    import c from '../../assets/images/banner3.jpg'
-    import d from '../../assets/images/banner4.png'
-    import e from '../../assets/images/banner5.jpg'
-    import {getGoodsList} from '../../service/getData'
+    import {getBannerList} from '../../service/getData'
 	export default {
 		data () {
 			return {
-				imgList: [{
-        			url: a
-        		}, {
-        			url: b
-        		}, {
-        			url: c
-        		}, {
-        			url: d
-        		}, {
-        			url: e
-        		}]
+				bannerList: []
 			}
 		},
 		components: {
@@ -55,8 +36,9 @@
 		methods: {
 		},
 		created () {
-			getGoodsList().then((res) => {
+			getBannerList().then((res) => {
 				console.log(res);
+				this.bannerList = res.data;
 			})
 		}
 	}

@@ -1,7 +1,7 @@
 <template>
 	 <div class="swiper-container">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="str in imgList" :style="{ backgroundImage: 'url(' + str.url + ')' }"></div>
+            <div class="swiper-slide" v-for="item in imgList" :style="{backgroundImage: 'url(' + item.src + ')' }"></div>
         </div>
         <div class="swiper-pagination swiper-pagination-white"></div>
     </div>
@@ -16,13 +16,15 @@
         	return {
         	}
         },
+        created () {           	
+        },
         mounted () {
             var swiper = new Swiper('.swiper-container', {
-                pagination: '.swiper-pagination',
-                paginationClickable: true,
                 loop: true,
                 speed: 600,
                 autoplay: 4000,
+                observer: true,
+                observeParents: true,
                 onTouchEnd: function () {
                     swiper.startAutoplay()
                 }
@@ -31,7 +33,7 @@
     }
 </script>
 
-<style>
+<style scoped lang="scss">
 	 .swiper-container {
         width: 100%;
         height: 7.5rem;

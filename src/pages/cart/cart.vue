@@ -1,7 +1,7 @@
 <template>
 	<section class="cart-container">
 	   <div class="title">
-	   	 <i class="iconfont backicon">&#xe61d;</i>
+	   	 <i class="iconfont backicon" @click="goBack()">&#xe61d;</i>
 	   	 <h4 class="text">购物车({{num}})</h4>
 	   </div>
 	   <div class="selectR">
@@ -45,6 +45,10 @@
 			selectAll () {
 				console.log('selectedAll');
 				this.isSelectedAll = true;
+			},
+			goBack () {
+				// 返回上一页
+				this.$router.go(-1)
 			}
 		}
 	}
