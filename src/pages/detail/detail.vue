@@ -50,6 +50,10 @@
 			addCart () {
 				console.log('buy buy');
 			}
+		},
+		created () {
+			// 得到该商品的信息id
+			console.log(this.$route.query.id);
 		}
 	}
 </script>

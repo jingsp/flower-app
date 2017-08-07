@@ -1,7 +1,7 @@
 <template>
 	<section class="item-container">
-		<router-link to="detail" class="content">
-			<img src="../../assets/images/first/test.png" alt="" />
+		<router-link :to="{path: 'detail', query: {id: item.id}}" class="content">
+			<img :src="item.src" alt="" />
 		    <p class="f-title">百合花</p>
 		    <p class="f-price">猜猜我多少钱</p>
 		</router-link>		
@@ -9,6 +9,18 @@
 </template>
 
 <script>
+	export default {
+		data () {
+			return {				
+			}
+		},
+		props: [
+		 'item'
+		],
+		created () {
+			console.log(this.item);
+		}
+	}
 </script>
 
 <style scoped lang="scss">

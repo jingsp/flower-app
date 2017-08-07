@@ -15,18 +15,19 @@
 			<p>经典爆款</p>
 		</router-link>
 	  </section>
-	  <goods-item></goods-item>
+	  <goods-item v-for="item in goodsList" :key="item.id" :item="item"></goods-item>
 	</section>
 </template>
 
 <script>
 	import Banner from '../../components/banner/banner'
 	import GoodsItem from '../../components/goodsItem/goodsItem'
-    import {getBannerList} from '../../service/getData'
+    import {getBannerList, getGoodsList} from '../../service/getData'
 	export default {
 		data () {
 			return {
-				bannerList: []
+				bannerList: [],
+				goodsList: []
 			}
 		},
 		components: {
@@ -39,6 +40,10 @@
 			getBannerList().then((res) => {
 				console.log(res);
 				this.bannerList = res.data;
+			})
+			getGoodsList().then((res) => {
+				console.log(res);
+				this.goodsList = res.data;
 			})
 		}
 	}

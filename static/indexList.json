@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "百合花",
+    "enName": "baihehua",
+    "desc": "遇见最美的你",
+    "src": "../static/img/banner1.jpg",
+    "price": 9.00
+   }, {
+    "id": 2,
+    "name": "满天星",
+    "enName": "baihehua",
+    "desc": "快乐",
+    "src": "../static/img/banner2.jpg",
+    "price": 9.00
+   }, {
+    "id": 3,
+    "name": "玫瑰",
+    "enName": "馨情无限",
+    "desc": "馨情无限",
+    "src": "../static/img/banner3.jpg",
+    "price": 9.00
+   }, {
+    "id": 4,
+    "name": "康乃馨",
+    "enName": "青青子衿",
+    "desc": "青青子衿",
+    "src": "../static/img/banner4.png",
+    "price": 9.00
+   }, {
+    "id": 5,
+    "name": "永生花",
+    "enName": "baihehua",
+    "desc": "恋心",
+    "src": "../static/img/banner5.jpg",
+    "price": 9.00
+   }
+]
