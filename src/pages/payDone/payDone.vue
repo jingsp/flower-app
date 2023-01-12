@@ -1,5 +1,6 @@
 <template>
 	<section class="done-container">
+		<v-header></v-header>
 		<div class="done">
 			<img src="../../assets/images/done.png" alt="" />
 			<p class="text">订单已完成</p>
@@ -22,13 +23,15 @@
 				</ul>
 			</li>
 		</ul>
-		<div>
-			
-		</div>
+		<!--<div class="footer">
+			<router-link to="home">订单详情</router-link>
+			<router-link to="home">立即评价</router-link>
+		</div>-->
 	</section>
 </template>
 
 <script>
+import VHeader from '../../components/header/vHeader'
  export default {
  	data () {
  		return {
@@ -37,6 +40,9 @@
  			price: 200.00,
  			num: 1 			
  		}
+ 	},
+ 	components: {
+ 		VHeader
  	}
  }
 </script>

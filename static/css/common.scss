@@ -26,12 +26,11 @@ time, mark, audio, video {
     background:transparent;
 }
 html {
-//  height: 100%;
-  -webkit-text-size-adjust:none;
+    height: 100%;
 }
 body {
     height: 100%;
-    line-height:1;
+//  line-height:1;
 }
 
 :focus {
@@ -151,11 +150,11 @@ ul, li {
 
 @font-face {
   font-family: 'iconfont';  /* project id 352838 */
-  src: url('//at.alicdn.com/t/font_83yzdtw1kvtjra4i.eot');
-  src: url('//at.alicdn.com/t/font_83yzdtw1kvtjra4i.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_83yzdtw1kvtjra4i.woff') format('woff'),
-  url('//at.alicdn.com/t/font_83yzdtw1kvtjra4i.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_83yzdtw1kvtjra4i.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_ft4ep7ug4gmvlsor.eot');
+  src: url('//at.alicdn.com/t/font_ft4ep7ug4gmvlsor.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_ft4ep7ug4gmvlsor.woff') format('woff'),
+  url('//at.alicdn.com/t/font_ft4ep7ug4gmvlsor.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_ft4ep7ug4gmvlsor.svg#iconfont') format('svg');
 }
 
 .iconfont {
